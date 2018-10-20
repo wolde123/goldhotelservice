@@ -7,13 +7,13 @@
     <name>BP PRE-INTERVIEW ASSIGNMENT</name>
 	<description>BP PRE-INTERVIEW ASSIGNMENT</description>
     <version>1.0.0</version>
-	<inceptionYear>2013</inceptionYear>
+	<inceptionYear>2018</inceptionYear>
 
 	<developers>
 		<developer>
 			<id>plamen</id>
-			<name>Plamen Stilyianov</name>
-			<email>plamen_stilyianov@yahoo.com</email>
+			<name>Behailu Getachew</name>
+			<email>begw2008@gmail.com</email>
 		</developer>
 	</developers>
     <build>
@@ -41,7 +41,7 @@
                 <version>2.1</version>
                 <configuration>
                     <server>myTomcat</server>
-                    <url>http://localhost:8080/manager/text</url>
+                    <url>http://localhost:8081/manager/text</url>
                     <path>/${project.build.finalName}</path>
                 </configuration>
             </plugin>
@@ -65,7 +65,11 @@
 	</properties>
 
 	<dependencies>
-
+                 <dependency>
+                      <groupId>org.springframework</groupId>
+                       <artifactId>spring-core</artifactId>
+                       <version>[4.3.17,)</version>
+                 </dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
